@@ -17,7 +17,7 @@ include 'imager.php';
 $full_width = 100;
 $img_inner = new Imager( new PNG( '../assets/pic_inner.png' ), new Transparency( true ) );
 $img_inner_new = $img_inner->resize( $full_width, 30 );
-	
+
 $img_left = new Imager( new PNG( '../assets/pic_left.png' ), new Transparency( true ) );
 $img_right = new Imager( new PNG( '../assets/pic_right.png' ), new Transparency( true ) );
 
