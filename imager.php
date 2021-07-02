@@ -1114,7 +1114,7 @@ class Imager {
 				$newR = $color[ 'red' ] * $col[0] + $color[ 'green' ] * $col[1] + $color[ 'blue' ] * $col[2];
 				$newG = $color[ 'red' ] * $col[2] + $color[ 'green' ] * $col[0] + $color[ 'blue' ] * $col[1];
 				$newB = $color[ 'red' ] * $col[1] + $color[ 'green' ] * $col[2] + $color[ 'blue' ] * $col[0];
-				$ncolor = imagecolorallocatealpha( $img->imgres, $newR, $newG, $newB, $colro[ 'alpha' ] );
+				$ncolor = imagecolorallocatealpha( $img->imgres, $newR, $newG, $newB, $color[ 'alpha' ] );
 				imagesetpixel( $img->imgres, $x, $y, $ncolor );
 			}
 		}
